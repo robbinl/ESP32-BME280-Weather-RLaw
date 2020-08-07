@@ -31,7 +31,6 @@ void setup() {
   // Setup the TFT
   tft.begin();
   tft.setRotation(3);
-  tft.loadFont("NotoSansBold20");
   tft.setTextColor(fg, bg);
   tft.fillScreen(bg);
   tft.setCursor(0, 0);
