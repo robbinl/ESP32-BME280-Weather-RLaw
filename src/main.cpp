@@ -71,6 +71,7 @@ void setup() {
     while (1);  // Infinite loop
   }
   // Connect to Wifi
+  wifiStatus(&tft, &io);
   io.connect();
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
@@ -78,7 +79,7 @@ void setup() {
   delay(500);
     }
   // Check the Wifi status
-  // wifiStatus();
+  wifiStatus(&tft, &io);
 
   // Setup the clock
   waitForSync();
