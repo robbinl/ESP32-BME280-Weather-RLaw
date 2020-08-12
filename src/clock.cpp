@@ -9,18 +9,18 @@ void refresh_clock(TFT_eSPI* tft, Timezone* timezone)
   //Clear the date area
   tft->fillRect(220, 50, 135, 70, TFT_BLACK);
   // Day of week, day of month
-  tft->setCursor(220, 50);
+  tft->setCursor(215, 50);
   tft->print(timezone->dateTime("l")); // Day of week
   // Month and day of month
-  tft->setCursor(220, 65);
+  tft->setCursor(215, 65);
   tft->print(timezone->dateTime("F")); // Month
   tft->print(" ");
   tft->print(timezone->dateTime("j"));  // Day of month
   // Year
-  tft->setCursor(220, 80);
+  tft->setCursor(215, 80);
   tft->print(timezone->dateTime("Y")); // Year
   // Time
-  tft->setCursor(220, 95);
+  tft->setCursor(215, 95);
   tft->print(timezone->dateTime("H:i:s")); // Time
 
 //   indicators();
