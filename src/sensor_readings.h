@@ -1,6 +1,7 @@
+#include "settings.h"
 #ifndef SENSOR_READINGS_H
     #define SENSOR_READINGS_H
-    #include "settings.h"
+    
     #define SEALEVELPRESSURE_HPA (1013.25)
 
     void refresh_readings_bme280(  Adafruit_BME280* bme, 
