@@ -1,4 +1,4 @@
-#include <Arduino.h>
+//#include <Arduino.h>
 #include "sensor_readings.h"
 
 // Passing the bme and tft objects by reference

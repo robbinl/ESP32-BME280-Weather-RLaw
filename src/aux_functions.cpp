@@ -1,4 +1,4 @@
-#include <Arduino.h>
+//#include <Arduino.h>
 #include "aux_functions.h"
 
 // uint16_t bg = TFT_BLACK;
