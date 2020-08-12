@@ -8,13 +8,13 @@
     #include "FS.h"
     #include <TFT_eSPI.h>
     #include "TaskScheduler.h"
-    #include "WiFi.h"
+    //#include "WiFi.h"
     #include "AdafruitIO_WiFi.h"
     #include "ezTime.h"
     #include "AdafruitIO_Feed.h"
     //#include "aux_functions.h"      // Helpful functions
-    #include "EEPROM.h"
-    #include "esp_system.h"  // To implement the watchdog
+    //#include "EEPROM.h"
+    //#include "esp_system.h"  // To implement the watchdog
     //#include "mqtt_controller.h"
     // uint16_t bg = TFT_BLACK;
     // uint16_t fg = TFT_WHITE;
