@@ -18,8 +18,8 @@
     //#include "mqtt_controller.h"
     // uint16_t bg = TFT_BLACK;
     // uint16_t fg = TFT_WHITE;
-    #define LED_PIN            17
-    #define IFTTT_PIN          16
+    //#define LED_PIN            17
+    //#define IFTTT_PIN          16
 #endif
 
 #ifdef DEBUGLOG

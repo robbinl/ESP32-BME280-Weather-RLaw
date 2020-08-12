@@ -12,6 +12,6 @@
     #define WIFI_SSID       "OldRob"
     #define WIFI_PASS       "5223qaz7542PLM"
 
-    #include "AdafruitIO_WiFi.h"   
+    //#include "AdafruitIO_WiFi.h"   
     AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 #endif
