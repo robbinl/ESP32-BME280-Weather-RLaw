@@ -3,7 +3,7 @@
 #include "network_config.h"
 #include "bmp_functions.h"
 #include "clock.h"
-//#include "aux_functions.h"
+#include "aux_functions.h"
 
 void sensor_readings_update();
 void clock_update();
