@@ -20,7 +20,7 @@ uint16_t bg = TFT_BLACK;
 uint16_t fg = TFT_WHITE;
 
 // Setup tasks for the task scheduler
-// The third argument taks a pointer to a function, but cannot have parameters.
+// The third argument takes a pointer to a function, but cannot have parameters.
 Task t1_bme280(10000, TASK_FOREVER, &sensor_readings_update);
 Task t2_clock(1000, TASK_FOREVER, &clock_update);
 
