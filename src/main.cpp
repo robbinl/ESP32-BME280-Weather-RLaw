@@ -1,14 +1,10 @@
 #include <Arduino.h>
+#include "settings.h"
 #include "sensor_readings.h"
-#include "SPIFFS.h"
-//#include "TFT_eSPI.h"     // ESP32 Hardware-specific library
-#include "settings.h"    // The order is important!
 #include "bmp_functions.h"
-#include "TaskScheduler.h"
-#include "WiFi.h"
-//#include <ESPAsyncWebServer.h>
 #include "network_config.h"
-#include "AdafruitIO_Feed.h"
+#include "clock.h"
+#include "aux_functions.h"
 
 void sensor_readings_update();
 void clock_update();
