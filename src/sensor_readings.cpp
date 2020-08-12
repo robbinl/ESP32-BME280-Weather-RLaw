@@ -21,6 +21,7 @@ void refresh_readings_bme280(  Adafruit_BME280* bme,
 
   uint16_t bg = TFT_BLACK;
   uint16_t fg = TFT_WHITE;
+  uint16_t tm = TFT_GREEN;
 
   // the -> symbol means to de-reference the pointer.
   tft->setCursor(5, 5);
@@ -39,7 +40,7 @@ void refresh_readings_bme280(  Adafruit_BME280* bme,
   // Temperature
   Serial.print(f_temperature);
   Serial.println(" °C");
-  tft->fillRect(5, 50, 140, 30, bg);
+  tft->fillRect(5, 50, 130, 30, bg);
   tft->setCursor(5, 50);
   tft->print(f_temperature);
   tft->println(" °C");

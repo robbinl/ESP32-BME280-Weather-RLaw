@@ -80,6 +80,7 @@ void setup() {
     }
   // Check the Wifi status
   wifiStatus(&tft, &io);
+  delay(2000);
 
   // Setup the clock
   waitForSync();
