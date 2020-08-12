@@ -111,12 +111,12 @@ void loop() {
 
 void sensor_readings_update()
 {
-  refresh_readings_bme280( &bme, 
-                    &tft, 
-                    temperature, 
-                    humidity, 
-                    barpressure, 
-                    altitude);
+  refresh_readings_bme280(  &bme, 
+                            &tft, 
+                            temperature, 
+                            humidity, 
+                            barpressure, 
+                            altitude);
 }
 
 void clock_update()
