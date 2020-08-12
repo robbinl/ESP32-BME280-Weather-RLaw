@@ -1,4 +1,5 @@
 #include "settings.h"
+#include "TaskScheduler.h"
 #include "sensor_readings.h"
 #include "network_config.h"
 #include "bmp_functions.h"

@@ -7,7 +7,7 @@
     #include "SPIFFS.h"
     #include "FS.h"
     #include <TFT_eSPI.h>
-    #include "TaskScheduler.h"
+    
     //#include "WiFi.h"
     #include "AdafruitIO_WiFi.h"
     #include "ezTime.h"
