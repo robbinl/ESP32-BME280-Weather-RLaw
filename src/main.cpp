@@ -117,6 +117,8 @@ void sensor_readings_update()
                             humidity, 
                             barpressure, 
                             altitude);
+  // Check the Wifi status
+  wifiStatus(&tft, &io);
 }
 
 void clock_update()
