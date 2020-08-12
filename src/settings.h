@@ -1,6 +1,7 @@
 #ifndef SETTINGS_H
     #define SETTINGS_H
     #define LED_BUILTIN 2   // This is valid for my devkit
+    #include "Arduino.h"
     #include <Adafruit_Sensor.h>
     #include <Adafruit_BME280.h>
     #include "SPIFFS.h"
