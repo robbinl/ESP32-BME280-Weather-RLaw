@@ -9,6 +9,7 @@
     #include "AdafruitIO_WiFi.h"
     #include "ezTime.h"
     #include "AdafruitIO_Feed.h"
+    #include "EEPROM.h"
     //#include "aux_functions.h"      // Helpful functions
     //#include "EEPROM.h"
     //#include "esp_system.h"  // To implement the watchdog
@@ -17,6 +18,9 @@
     // uint16_t fg = TFT_WHITE;
     //#define LED_PIN            17
     //#define IFTTT_PIN          16
+    #define EEPROM_SIZE 2  // We'll use 1 byte in the EEPROM to store the max number of POSTs
+                            // MQTT posts where completed in the current power cycle
+
 #endif
 
 #ifdef DEBUGLOG

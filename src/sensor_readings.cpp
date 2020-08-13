@@ -1,5 +1,6 @@
 //#include <Arduino.h>
 #include "sensor_readings.h"
+#include "aux_functions.h"
 
 // Passing the bme and tft objects by reference
 // the * means that the parameter called bme will contain an address to the object of type Adafruit_BME280
@@ -73,7 +74,8 @@ void refresh_readings_bme280( Adafruit_BME280* bme,
   hum     ->save(f_humidity );
   bar     ->save(f_pressure );
   alt     ->save(f_altitude );
-  
+  // Update the postsCounter value in the EEPROM and the TFT
+  postsCounter(tft);
   //digitalWrite(LED_BUILTIN, LOW);
   Serial.println("-----v3----");   
 }
