@@ -53,7 +53,7 @@ void postsCounter(  TFT_eSPI* tft)
     EEPROM.commit();
   }
 
-  tft->loadFont("NotoSansBold15");
+  tft->loadFont("NotoSansBold20");
   tft->setTextColor(TFT_LIGHTGREY, TFT_BLACK);
   tft->fillRect(220, 0, 90, 20, TFT_BLACK);
   tft->setCursor(220, 0);
