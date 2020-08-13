@@ -81,6 +81,7 @@ void setup() {
   // Connect to Wifi
   wifiStatus(&tft, &io);
   io.connect();
+  wifiStatus(&tft, &io);
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
       Serial.print(".");
