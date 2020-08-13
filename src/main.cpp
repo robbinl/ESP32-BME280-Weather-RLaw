@@ -52,11 +52,13 @@ void initSPIFFS()
 void setup() {
   Serial.begin(9600);
   // Setup the EEPROM where we'll write and read the max number of Posts
-  EEPROM.begin(EEPROM_SIZE); 
-  if (EEPROM.readInt(0) < 0)
+  EEPROM.begin(EEPROM_SIZE);
+  //EEPROM.write(0,99); 
+  if (EEPROM.read(0) < 0)
   {
     // If the value stored in EEPROM is negative, then initialise to zero
-    EEPROM.writeInt(0, 0);
+    //EEPROM.writeInt(0, 0);
+    EEPROM.write(0, 0);
     EEPROM.commit();
   }
   initSPIFFS();

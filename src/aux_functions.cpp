@@ -42,14 +42,16 @@ const char* wl_status_to_string(wl_status_t status) {
 
 void postsCounter(  TFT_eSPI* tft)
 {
-  int maxPosts = EEPROM.readInt(0);
-
+  //int maxPosts = EEPROM.readInt(0);
+  int maxPosts = EEPROM.read(0);
+  Serial.println(maxPosts);
   postCounter++; // increment the postCounter by one.
-
+  Serial.println(postCounter);
   if (postCounter > maxPosts)
   {
     maxPosts = postCounter;
-    EEPROM.writeInt(0, maxPosts); // Write the new maxPosts in the EEPROM
+    //EEPROM.writeInt(0, maxPosts); // Write the new maxPosts in the EEPROM
+    EEPROM.write(0, maxPosts);
     EEPROM.commit();
   }
 
@@ -59,5 +61,6 @@ void postsCounter(  TFT_eSPI* tft)
   tft->setCursor(220, 0);
   tft->print(postCounter);
   tft->print("/");
-  tft->print(EEPROM.readInt(0));
+  //tft->print(EEPROM.readInt(0));
+  tft->print(EEPROM.read(0));
 }
