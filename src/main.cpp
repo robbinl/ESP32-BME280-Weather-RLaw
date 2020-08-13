@@ -115,7 +115,7 @@ void loop() {
   // Update the MQTT queue and stay connected to Adafruit IO
   io.run();
   // Update the clock
-  //events();
+  events();
 }
 
 void sensor_readings_update()
