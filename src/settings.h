@@ -18,10 +18,10 @@
     // uint16_t fg = TFT_WHITE;
     //#define LED_PIN            17
     //#define IFTTT_PIN          16
-    //#define EEPROM_SIZE 2  
+    #define EEPROM_SIZE 4  
     // We'll use 1 byte in the EEPROM to store the max number of POSTs
     // MQTT posts where completed in the current power cycle
-    #define EEPROM_SIZE 1                        
+    //#define EEPROM_SIZE 1                        
 
 #endif
 
