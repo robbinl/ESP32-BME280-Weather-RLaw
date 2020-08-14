@@ -7,7 +7,7 @@
 // For those students using the MCU-6050 this code inside "refresh_readings" 
 // will be completely different than for the Adafruit_BME280.
 void refresh_readings_bme280( Adafruit_BME280* bme, 
-                              TFT_eSPI* tft,
+                                     TFT_eSPI* tft,
                               AdafruitIO_Feed* temp,
                               AdafruitIO_Feed* hum,
                               AdafruitIO_Feed* bar,
