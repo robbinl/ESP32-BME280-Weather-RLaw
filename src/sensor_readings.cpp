@@ -26,9 +26,10 @@ void refresh_readings_bme280( Adafruit_BME280* bme,
   // the -> symbol means to de-reference the pointer.
   tft->setCursor(5, 5);
   tft->setTextColor(fg, bg);
+  tft->loadFont("NotoSansBold20");
+  tft->println("Now...");
   // Create TTF fonts using instructions at https://pages.uoregon.edu/park/Processing/process5.html
-  tft->loadFont("SansSerif-36");
-  tft->println("Right now...");
+  
 
   f_temperature = bme->readTemperature();
   f_humidity    = bme->readHumidity();
@@ -36,7 +37,7 @@ void refresh_readings_bme280( Adafruit_BME280* bme,
   f_altitude    = bme->readAltitude(SEALEVELPRESSURE_HPA);
 
   tft->setTextColor(TFT_YELLOW, bg);
-
+  tft->loadFont("SansSerif-36");
   // Temperature
   Serial.print(f_temperature);
   Serial.println(" °C");
