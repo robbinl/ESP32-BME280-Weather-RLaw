@@ -15,20 +15,34 @@ void drawBmp(const char *filename, int16_t x, int16_t y, TFT_eSPI* tft) {
     return;
   }
 
-  uint32_t seekOffset;
+  uint32_t seekOffset, sec, third, fourth;
   uint16_t w, h, row, col;
   uint8_t  r, g, b;
 
   uint32_t startTime = millis();
-
-  if (read16(bmpFS) == 0x4D42)
+  uint16_t first = read16(bmpFS);
+  //Serial.printf(String(first));
+  Serial.print("first16 = ");
+  Serial.println(first, HEX);
+  if (first == 0x4D42)
+  //if (read16(bmpFS) == 0x4D42)
   {
-    read32(bmpFS);
-    read32(bmpFS);
+    sec = read32(bmpFS);
+    Serial.print("sec32 = ");
+    Serial.println(sec, HEX);
+    third = read32(bmpFS);
+    Serial.print("third32 = ");
+    Serial.println(third, HEX);
     seekOffset = read32(bmpFS);
-    read32(bmpFS);
+    Serial.print("offset32 = ");
+    Serial.println(seekOffset, HEX);
+    fourth = read32(bmpFS);
+    Serial.print("fourth32 = ");
+    Serial.println(fourth, HEX);
     w = read32(bmpFS);
+    Serial.println(w);
     h = read32(bmpFS);
+    Serial.println(h);
 
     if ((read16(bmpFS) == 1) && (read16(bmpFS) == 24) && (read32(bmpFS) == 0))
     {
@@ -75,6 +89,7 @@ void drawBmp(const char *filename, int16_t x, int16_t y, TFT_eSPI* tft) {
 uint16_t read16(fs::File &f) {
   uint16_t result;
   ((uint8_t *)&result)[0] = f.read(); // LSB
+  //Serial.write(&result[0]);
   ((uint8_t *)&result)[1] = f.read(); // MSB
   return result;
 }
