@@ -29,12 +29,12 @@ void indicators(  TFT_eSPI* tft,
 const char* wl_status_to_string(wl_status_t status) {
   switch (status) {
     case WL_NO_SHIELD: return "NO_SHIELD";
-    case WL_IDLE_STATUS: return "WL_IDLE_STATUS";
-    case WL_NO_SSID_AVAIL: return "WL_NO_SSID_AVAIL";
-    case WL_SCAN_COMPLETED: return "WL_SCAN_COMPLETED";
+    case WL_IDLE_STATUS: return "IDLE_STATUS";
+    case WL_NO_SSID_AVAIL: return "NO_SSID_AVAIL";
+    case WL_SCAN_COMPLETED: return "SCAN_COMPLETED";
     case WL_CONNECTED: return "CONNECTED";
-    case WL_CONNECT_FAILED: return "WL_CONNECT_FAILED";
-    case WL_CONNECTION_LOST: return "WL_CONNECTION_LOST";
+    case WL_CONNECT_FAILED: return "CONNECT_FAILED";
+    case WL_CONNECTION_LOST: return "CONNECTION_LOST";
     case WL_DISCONNECTED: return "DISCONNECTED";
     default: return "hi";
   }
@@ -62,6 +62,5 @@ void postsCounter(  TFT_eSPI* tft)
   tft->setCursor(220, 0);
   tft->print(postCounter);
   tft->print("/");
-  //tft->print(EEPROM.readInt(0));
   tft->print(EEPROM.readInt(0));
 }
