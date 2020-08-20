@@ -108,7 +108,7 @@ void setup() {
   t2_clock.enable();
 
   tft.fillScreen(bg);
-  drawBmp("/blueegg2.bmp", 160, 180, &tft);
+  drawBmp("/blueegg.bmp", 160, 180, &tft);
 }
 
 void loop() {
