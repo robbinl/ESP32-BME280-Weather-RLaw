@@ -65,7 +65,7 @@ void refresh_readings_bme280( Adafruit_BME280* bme,
   // Appx altitude
   Serial.print(f_altitude);
   Serial.println(" m");   
-  tft->fillRect(5, 170, 200, 30, bg);
+  tft->fillRect(5, 170, 130, 30, bg);
   tft->setCursor(5, 170);
   tft->print(f_altitude); 
   tft->println(" m");

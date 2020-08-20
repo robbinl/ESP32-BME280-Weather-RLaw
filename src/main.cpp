@@ -72,7 +72,7 @@ void setup() {
   tft.setCursor(0, 0);
   tft.println("Hello!");
   tft.println("Starting BME sensor...");
-  delay(5000);
+  //delay(1000);
 
   // (you can also pass in a Wire library object like &Wire2)
   status = bme.begin(0x76);
@@ -108,7 +108,7 @@ void setup() {
   t2_clock.enable();
 
   tft.fillScreen(bg);
-  drawBmp("/te.bmp", 160, 198, &tft);
+  drawBmp("/blueegg2.bmp", 160, 180, &tft);
 }
 
 void loop() {
