@@ -36,7 +36,7 @@ const char* wl_status_to_string(wl_status_t status) {
     case WL_CONNECT_FAILED: return "CONNECT_FAILED";
     case WL_CONNECTION_LOST: return "CONNECTION_LOST";
     case WL_DISCONNECTED: return "DISCONNECTED";
-    default: return "hi";
+    default: return "";
   }
 }
 
