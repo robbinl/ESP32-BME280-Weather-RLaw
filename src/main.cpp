@@ -15,10 +15,6 @@ Adafruit_BME280 bme;
 TFT_eSPI tft = TFT_eSPI();
 // Setup the clock 
 Timezone edmontonTZ;
-
-uint16_t bg = TFT_BLACK;
-uint16_t fg = TFT_WHITE;
-
 // Setup tasks for the task scheduler
 // The third argument takes a pointer to a function, but cannot have parameters.
 Task t1_bme280(10000, TASK_FOREVER, &sensor_readings_update);
@@ -86,9 +82,9 @@ void setup() {
   wifiStatus(&tft, &io);
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
-      Serial.print(".");
-  delay(500);
-    }
+    Serial.print(".");
+    delay(500);
+  }
   // Check the Wifi status
   wifiStatus(&tft, &io);
   delay(2000);

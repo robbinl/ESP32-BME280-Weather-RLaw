@@ -1,23 +1,16 @@
-//#include <Arduino.h>
 #include "aux_functions.h"
 
 int postCounter = 0; // Use this counter to indicate (on the TFT screen) how many
                      // MQTT posts where completed in the current power cycle
 
-
-// uint16_t bg = TFT_BLACK;
-// uint16_t fg = TFT_WHITE;
-
 void wifiStatus(  TFT_eSPI* tft, 
                   AdafruitIO_WiFi* io)
 {
-  // Wifi status
   tft -> loadFont("NotoSansBold20");
   tft -> setTextColor(TFT_LIGHTGREY, TFT_BLACK);
   tft -> fillRect(5, 220, 150, 20, TFT_BLACK);
   tft -> setCursor(5, 220);
   tft -> print(wl_status_to_string(WiFi.status()));
-  //tft -> print(io -> networkStatus());
 }
 
 void indicators(  TFT_eSPI* tft, 
