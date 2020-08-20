@@ -50,7 +50,7 @@ void setup() {
     while (1);  // Infinite loop
   }
   tft.fillScreen(bg);
-  drawBmp("/blueegg.bmp", 160, 198, &tft);
+  drawBmp("/blueegg.bmp", 160, 180, &tft);
 }
 
 void loop() {
