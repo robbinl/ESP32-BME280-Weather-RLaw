@@ -4,8 +4,6 @@
 
 // Passing the bme and tft objects by reference
 // the * means that the parameter called bme will contain an address to the object of type Adafruit_BME280
-// For those students using the MCU-6050 this code inside "refresh_readings" 
-// will be completely different than for the Adafruit_BME280.
 void refresh_readings_bme280(Adafruit_BME280* bme, TFT_eSPI* tft) {
   float f_temperature;
   float f_humidity;
@@ -59,15 +57,11 @@ void refresh_readings_bme280(Adafruit_BME280* bme, TFT_eSPI* tft) {
   // Appx altitude
   Serial.print(f_altitude);
   Serial.println(" m");   
-  tft->fillRect(5, 170, 200, 30, bg);
+  tft->fillRect(5, 170, 130, 30, bg);
   tft->setCursor(5, 170);
   tft->print(f_altitude); 
   tft->println(" m");
   
   //digitalWrite(LED_BUILTIN, LOW);
   Serial.println("-----v3----");   
-}
-
-void refresh_readings_mpu6050(TFT_eSPI* tft){
-
 }

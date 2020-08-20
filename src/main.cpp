@@ -67,7 +67,7 @@ void setup() {
   t1_bme280.enable();
 
   tft.fillScreen(bg);
-  drawBmp("/te.bmp", 160, 198, &tft);
+  drawBmp("/blueegg.bmp", 160, 180, &tft);
 }
 
 void loop() {
