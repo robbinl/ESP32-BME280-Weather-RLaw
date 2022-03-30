@@ -14,8 +14,8 @@
     //#include "EEPROM.h"
     //#include "esp_system.h"  // To implement the watchdog
     //#include "mqtt_controller.h"
-    uint16_t bg = TFT_BLACK;
-    uint16_t fg = TFT_WHITE;
+    //uint16_t bg = TFT_BLACK;
+    //uint16_t fg = TFT_WHITE;
     //#define LED_PIN            17
     //#define IFTTT_PIN          16
     #define EEPROM_SIZE 4     

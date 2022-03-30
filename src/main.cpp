@@ -63,6 +63,8 @@ void setup() {
   tft.begin();
   tft.setRotation(3);
   tft.loadFont("NotoSansBold20");
+  uint16_t bg = 0;
+  uint16_t fg = 0xFFF;
   tft.setTextColor(fg, bg);
   tft.fillScreen(bg);
   tft.setCursor(0, 0);

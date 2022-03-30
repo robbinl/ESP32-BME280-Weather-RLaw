@@ -10,7 +10,7 @@
 
     // wifi credentials
     #define WIFI_SSID       "OldRob"
-    #define WIFI_PASS       "5223qaz7542PLM"
+    #define WIFI_PASS       "857qw442RT"
 
     //#include "AdafruitIO_WiFi.h"   
     AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
