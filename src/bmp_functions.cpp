@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#include "settings.h"
 #include "bmp_functions.h"
 
 void drawBmp(const char *filename, int16_t x, int16_t y, TFT_eSPI* tft) {

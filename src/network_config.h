@@ -1,7 +1,7 @@
 //#include <Arduino.h>
 #ifndef NETWORK_CONFIG_H
     #define NETWORK_CONFIG_H
-    #include "settings.h"
+    //#include "settings.h"
 
     // visit io.adafruit.com if you need to create an account,
     // or if you need your Adafruit IO key.

@@ -1,8 +1,6 @@
-#include "settings.h"
 #ifndef AUX_FUNCTIONS_H
     #define AUX_FUNCTIONS_H
     
-
     void wifiStatus(TFT_eSPI* tft, 
                     AdafruitIO_WiFi* io);
 

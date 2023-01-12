@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#include "settings.h"
 #include "clock.h"
 
 void refresh_clock(TFT_eSPI* tft, Timezone* timezone)

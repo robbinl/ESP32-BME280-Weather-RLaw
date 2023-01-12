@@ -1,6 +1,9 @@
-//#include <Arduino.h>
-#include "sensor_readings.h"
+#include <Arduino.h>
+#include "settings.h"
 #include "aux_functions.h"
+#include "sensor_readings.h"
+//#include "aux_functions.h"
+
 
 // Passing the bme and tft objects by reference
 // the * means that the parameter called bme will contain an address to the object of type Adafruit_BME280

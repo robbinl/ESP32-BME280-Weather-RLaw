@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#include "settings.h"
 #include "aux_functions.h"
 
 int postCounter = 0; // Use this counter to indicate (on the TFT screen) how many

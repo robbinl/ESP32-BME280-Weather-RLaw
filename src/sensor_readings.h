@@ -1,4 +1,3 @@
-#include "settings.h"
 #ifndef SENSOR_READINGS_H
     #define SENSOR_READINGS_H
     
